@@ -1,0 +1,374 @@
+/* General Body Styles - Home Page Background Color */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Header Styles */
+header {
+    background-color: #ffffff;
+    padding: 20px 0 0 0;
+}
+
+header h1 {
+    text-align: center;
+    color: #2c3e50;
+    margin: 0 0 20px 0;
+    font-size: 32px;
+}
+
+/* Navigation Styles */
+nav {
+    background-color: #2c3e50;
+    padding: 0;
+    text-align: center;
+}
+
+/* Horizontal navigation list with no bullet points */
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: inline-flex;
+}
+
+nav ul li {
+    margin: 0;
+}
+
+/* Navigation links */
+nav ul li a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 15px 30px;
+    font-size: 16px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+/* Hover effect - color changes when hovering over header items */
+nav ul li a:hover {
+    background-color: #e74c3c;
+    color: white;
+}
+
+/* Main Content Area */
+main {
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 0 20px;
+    flex: 1;
+}
+
+/* Section Styles */
+section {
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+section h2 {
+    color: #2c3e50;
+    border-bottom: 2px solid #e74c3c;
+    padding-bottom: 10px;
+    margin-top: 0;
+}
+
+section h3 {
+    color: #e74c3c;
+}
+
+/* Hero Section */
+.hero {
+    background-color: #e74c3c;
+    color: white;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.hero h2 {
+    color: white;
+    border-bottom-color: white;
+}
+
+/* Lists */
+ul {
+    margin-left: 20px;
+}
+
+li {
+    margin: 8px 0;
+}
+
+/* Services Page Styles */
+.services-section {
+    background-color: white;
+}
+
+.service-item {
+    background-color: #f9f9f9;
+    padding: 15px;
+    margin: 15px 0;
+    border-left: 4px solid #e74c3c;
+    border-radius: 5px;
+}
+
+.service-item h3 {
+    margin-top: 0;
+}
+
+/* Contact Page Styles */
+.contact-section form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-section label {
+    font-weight: bold;
+    margin: 15px 0 5px 0;
+}
+
+.contact-section input,
+.contact-section textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: Arial, sans-serif;
+}
+
+.contact-section input[type="submit"] {
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 12px;
+    margin-top: 20px;
+}
+
+.contact-section input[type="submit"]:hover {
+    background-color: #c0392b;
+}
+
+.contact-info {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 30px;
+}
+
+.contact-info h3 {
+    margin-top: 0;
+}
+
+/* ========== FOOTER STYLES WITH FLEXBOX ========== */
+footer {
+    background-color: #2c3e50;
+    color: white;
+    margin-top: 30px;
+}
+
+/* Flexbox container for footer sections - creates rows and columns */
+.footer-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+/* Each footer section uses flexbox */
+.footer-section {
+    flex: 1;
+    min-width: 250px;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-section h3 {
+    color: #e74c3c;
+    margin-bottom: 20px;
+    font-size: 18px;
+    border-bottom: 2px solid #e74c3c;
+    display: inline-block;
+    padding-bottom: 5px;
+    align-self: flex-start;
+}
+
+/* Contact items styling */
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 10px 0;
+}
+
+.contact-item i {
+    font-size: 18px;
+    color: #e74c3c;
+    width: 25px;
+}
+
+/* Map container */
+.map-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.map-container iframe {
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+.location-text {
+    font-size: 12px;
+    color: #bdc3c7;
+    text-align: center;
+}
+
+/* Social Icons - Icon only, no text */
+.social-icons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.social-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+    height: 45px;
+    background-color: #e74c3c;
+    color: white;
+    text-decoration: none;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+    font-size: 22px;
+}
+
+.social-icon:hover {
+    background-color: #c0392b;
+    transform: translateY(-3px) scale(1.05);
+}
+
+/* Footer Form - Flexbox layout */
+.footer-form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.footer-form input,
+.footer-form select,
+.footer-form textarea {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.footer-form input:focus,
+.footer-form select:focus,
+.footer-form textarea:focus {
+    outline: none;
+    border: 2px solid #e74c3c;
+}
+
+.footer-form input[type="submit"] {
+    background-color: #e74c3c;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 12px;
+    transition: background-color 0.3s ease;
+}
+
+.footer-form input[type="submit"]:hover {
+    background-color: #c0392b;
+}
+
+/* Copyright Notice */
+.copyright {
+    background-color: #1a252f;
+    text-align: center;
+    padding: 15px;
+    border-top: 1px solid #34495e;
+}
+
+.copyright p {
+    margin: 0;
+    font-size: 14px;
+    color: #bdc3c7;
+}
+
+/* Responsive Design for Footer */
+@media (max-width: 1024px) {
+    .footer-container {
+        flex-wrap: wrap;
+    }
+    
+    .footer-section {
+        flex: 1 1 calc(50% - 30px);
+        min-width: 280px;
+    }
+}
+
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+    }
+    
+    .footer-section {
+        width: 100%;
+    }
+    
+    .footer-section h3 {
+        align-self: center;
+        text-align: center;
+    }
+    
+    .social-icons {
+        justify-content: center;
+    }
+    
+    nav ul {
+        display: block;
+    }
+    
+    nav ul li {
+        display: block;
+    }
+    
+    nav ul li a {
+        padding: 10px;
+    }
+    
+    header h1 {
+        font-size: 24px;
+    }
+    
+    section {
+        padding: 15px;
+    }
+    
+    .contact-item {
+        justify-content: center;
+    }
+}
